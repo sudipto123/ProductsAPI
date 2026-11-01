@@ -3552,11 +3552,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\ProductApi.csproj",
+      "projectUniqueName": "D:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\ProductApi.csproj",
       "projectName": "ProductApi",
-      "projectPath": "d:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\ProductApi.csproj",
+      "projectPath": "D:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\ProductApi.csproj",
       "packagesPath": "C:\\Users\\Sudipto Dutta\\.nuget\\packages\\",
-      "outputPath": "d:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\obj\\",
+      "outputPath": "D:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sudipto Dutta\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3629,7 +3629,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.320/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

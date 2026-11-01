@@ -5,8 +5,18 @@ using ProductApi.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add Services
-
 builder.Services.AddControllers();
+
+// CORS Policy for Angular (localhost:4200)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngularApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:4200")
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 // SQLite Database Path
 var dbPath = Path.Combine(
@@ -35,8 +45,7 @@ var app = builder.Build();
 // Display actual database location in logs
 Console.WriteLine($"SQLite Database Path: {dbPath}");
 
-// Swagger available in IIS and local environments
-
+// Swagger
 app.UseSwagger();
 
 app.UseSwaggerUI(options =>
@@ -44,6 +53,9 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "Product API v1");
     options.RoutePrefix = string.Empty;
 });
+
+// Enable CORS
+app.UseCors("AllowAngularApp");
 
 app.UseHttpsRedirection();
 

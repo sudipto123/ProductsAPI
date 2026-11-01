@@ -146,3 +146,4 @@ D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\obj\Release\net9.
 D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\obj\Release\net9.0\ProductApi.genruntimeconfig.cache
 D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\obj\Release\net9.0\ref\ProductApi.dll
 D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\bin\Release\net9.0\products.db
+D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\obj\Release\net9.0\ProductApi.sourcelink.json

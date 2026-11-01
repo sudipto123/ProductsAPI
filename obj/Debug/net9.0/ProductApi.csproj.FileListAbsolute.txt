@@ -153,3 +153,4 @@ D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\bin\Debug\net9.0\
 D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\bin\Debug\net9.0\publish\ProductApi.runtimeconfig.json
 D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\bin\Debug\net9.0\publish\ProductApi.staticwebassets.endpoints.json
 D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\bin\Debug\net9.0\products.db
+D:\Study\Projects\Angular_With_Dot_Net_Core_Web_API\ProductApi\obj\Debug\net9.0\ProductApi.sourcelink.json

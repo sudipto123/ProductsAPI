@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u0ZxNfs+rDQ=",
+  "dgSpecHash": "653Mnt4anrM=",
   "success": true,
-  "projectFilePath": "d:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\ProductApi.csproj",
+  "projectFilePath": "D:\\Study\\Projects\\Angular_With_Dot_Net_Core_Web_API\\ProductApi\\ProductApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sudipto Dutta\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sudipto Dutta\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
