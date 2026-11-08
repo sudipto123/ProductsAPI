@@ -39,13 +39,6 @@ public class ProductsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Product>> CreateProduct(Product product)
     {
-        int maxId = await _context.Products
-            .Select(p => p.Id)
-            .DefaultIfEmpty(0)
-            .MaxAsync();
-
-        product.Id = maxId + 1;
-
         _context.Products.Add(product);
 
         await _context.SaveChangesAsync();
