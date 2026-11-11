@@ -11,5 +11,14 @@ public class AppDbContext : DbContext
     {
     }
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        base.OnModelCreating(modelBuilder);
+
+        modelBuilder.Entity<Product>()
+            .HasIndex(p => p.Name)
+            .IsUnique();
+    }
+
     public DbSet<Product> Products { get; set; }
 }

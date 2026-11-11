@@ -39,6 +39,19 @@ public class ProductsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Product>> CreateProduct(Product product)
     {
+        product.Name = product.Name.Trim();
+
+        bool exists = await _context.Products
+            .AnyAsync(p => p.Name == product.Name);
+
+        if (exists)
+        {
+            return Conflict(new
+            {
+                message = "A product with this name already exists."
+            });
+        }
+
         _context.Products.Add(product);
 
         await _context.SaveChangesAsync();
@@ -51,15 +64,32 @@ public class ProductsController : ControllerBase
 
     // PUT: api/products/1
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateProduct(
-        int id,
-        Product product)
+    public async Task<IActionResult> UpdateProduct(int id, Product product)
     {
         if (id != product.Id)
             return BadRequest();
 
-        _context.Entry(product).State =
-            EntityState.Modified;
+        var existingProduct = await _context.Products.FindAsync(id);
+
+        if (existingProduct == null)
+            return NotFound();
+
+        product.Name = product.Name.Trim();
+
+        bool exists = await _context.Products
+            .AnyAsync(p => p.Id != id && p.Name == product.Name);
+
+        if (exists)
+        {
+            return Conflict(new
+            {
+                message = "Another product with this name already exists."
+            });
+        }
+
+        existingProduct.Name = product.Name;
+        existingProduct.Price = product.Price;
+        existingProduct.Description = product.Description;
 
         await _context.SaveChangesAsync();
 
